@@ -1,4 +1,4 @@
-﻿@{ 
+
     Layout = null;
 }
 <!DOCTYPE html>
@@ -87,82 +87,77 @@
         </div> <!-- end of header-content -->
     </header> <!-- end of header -->
     <!-- end of header -->
-    <!-- Intro -->
-    <div id="intro" class="basic-1">
+<!-- Call Me -->
+    <div id="callMe" class="form-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="text-container">
-                        <div class="section-title">Register</div>
-                        <h2>Create an Account</h2>
-                        <p>Create an account now and start shopping online with E-Commerce.</p>
-                        <p class="testimonial-text">"The E-Commerce site is so fast and responsive! I'm so glad I signed up!"</p>
-                        <div class="testimonial-author">Michael John - Happy Customer</div>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/intro-office.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of intro -->
-    <!-- Description -->
-    <div class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack">
-                            <span class="hexagon"></span>
-                            <i class="fas fa-list-alt fa-stack-1x"></i>
-                        </span>
-                        <div class="card-body">
-                            <!-- This is where the account creation method will be placed, will need to adjust this code a bit -->
-                            <h4 class="card-title">Register Here</h4>
-                            <p>Start buying products with us by creating an account</p>
-                        </div>
+                        <div class="section-title">CALL ME</div>
+                        <h2 class="white">Have Us Contact You By Filling And Submitting The Form</h2>
+                        <p class="white">You are just a few steps away from a personalized offer. Just fill in the form and send it to us and we'll get right back with a call to help you decide what service package works.</p>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">It's very easy just fill in the form so we can call</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">During the call we'll require some info about the company</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Don't hesitate to email us for any questions or inquiries</div>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- end of card -->
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input type="text" class="form-control-input" id="lname" name="lname" required>
+                            <label class="label-control" for="lname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
+                            <label class="label-control" for="lphone">Phone</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with E-Com's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
+                            <label class="label-control" for="lemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                            <select class="form-control-select" id="lselect" required>
+                                <option class="select-option" value="" disabled selected>Interested in...</option>
+                                <option class="select-option" value="Off The Ground">Off The Ground</option>
+                                <option class="select-option" value="Accelerated Growth">Accelerated Growth</option>
+                                <option class="select-option" value="Market Domination">Market Domination</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox white">
+                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms & Conditions</a>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">CALL ME</button>
                         </div>
                         <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
                         </div>
                     </form>
-                    <!-- end of contact form -->
+                    <!-- end of call me form -->
+
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of description -->
-
+    </div> <!-- end of form-1 -->
+    <!-- end of call me -->
     <!-- Footer -->
     <div class="footer">
         <div class="container">
